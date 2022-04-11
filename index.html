@@ -23,23 +23,23 @@
     - The freeCodeCamp Team
 
     -->
-    <h1>freeCodeCamp Survey Form</h1>
-    <h4>Thank you for taking the time to help us improve the platform</h4>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description" >Thank you for taking the time to help us improve the platform</p>
     <main id="container">
-      <form >
+      <form id="survey-form" >
         <div>
-          <label for="">Name</label>
-          <input type="text">
+          <label id="name-label">Name</label>
+          <input id="name" type="text" placeholder="enter your name" required>
         </div>
 
         <div>
-          <label for="">Email</label>
-          <input type="text">
+          <label id="email-label">Email</label>
+          <input id="email" type="email" placeholder="enter your email" required>
         </div>
 
         <div>
-          <label for="">Age <span>(optional)</span></label>
-          <input type="number">
+          <label id="number-label">Age <span>(optional)</span></label>
+          <input id="number" type="number" max="100" min="10" placeholder="enter your age" required>
         </div>
 
         <div>
@@ -55,14 +55,14 @@
         </div>
         <div>
           <label for="">Would you recommend freeCodeCamp to a friend</label>
-          <div><input type="checkbox" name="recommend" id=""> Definitely </div>
-          <div><input type="checkbox" name="recommend" id=""> Maybe </div>
-          <div><input type="checkbox" name="recommend" id=""> Not sure </div>
+          <div><input type="radio" value="1" name="recommend" value="Definitely" id=""> Definitely </div>
+          <div><input type="radio" value="1" name="recommend" value="Maybe" id=""> Maybe </div>
+          <div><input type="radio" value="1" name="recommend" value="Not sure" id=""> Not sure </div>
         </div>
         
         <div>
           <label for="">What is your favorite feature of freeCodeCamp?</label>
-          <select name="" id="" >
+          <select name="" id="dropdown" >
            <option value="" disabled> Select an option</option>
            <option value="">Challenges</option>
            <option value="">Projects</option>
@@ -73,17 +73,17 @@
 
         <div>
           <label for="">What would you like to see improved? <span>(Check all that apply)</span></label>
-          <div><input type="checkbox" name="" id=""> Front-end Projects </div>
-          <div><input type="checkbox" name="" id=""> Back-end Projects </div>
-          <div><input type="checkbox" name="" id=""> Data Visualization </div>
-          <div><input type="checkbox" name="" id=""> Challenges </div>
-          <div><input type="checkbox" name="" id=""> Open Source Community</div>
-          <div><input type="checkbox" name="" id=""> Gitter help rooms</div>
-          <div><input type="checkbox" name="" id=""> Videos </div>
-          <div><input type="checkbox" name="" id=""> City Meetups </div>
-          <div><input type="checkbox" name="" id=""> Wiki </div>
-          <div><input type="checkbox" name="" id=""> Forum </div>
-          <div><input type="checkbox" name="" id=""> Additional Courses </div>
+          <div><input type="checkbox" name="imporve" value="Front-end Projects" id=""> Front-end Projects </div>
+          <div><input type="checkbox" name="imporve" value="Back-end Projects" id=""> Back-end Projects </div>
+          <div><input type="checkbox" name="imporve" value="Data Visualization" id=""> Data Visualization </div>
+          <div><input type="checkbox" name="imporve" value="Challenges" id=""> Challenges </div>
+          <div><input type="checkbox" name="imporve" value="Open Source Community" id=""> Open Source Community</div>
+          <div><input type="checkbox" name="imporve2" value="Gitter help rooms" id=""> Gitter help rooms</div>
+          <div><input type="checkbox" name="imporve2" value="Videos" id=""> Videos </div>
+          <div><input type="checkbox" name="imporve2" value="City Meetups" id=""> City Meetups </div>
+          <div><input type="checkbox" name="imporve2" value="Wiki" id=""> Wiki </div>
+          <div><input type="checkbox" name="imporve2" value="Forum" id=""> Forum </div>
+          <div><input type="checkbox" name="imporve2" value="Additional Courses" id=""> Additional Courses </div>
         </div>
 
         <div>
@@ -91,7 +91,7 @@
           <textarea name="" placeholder="Enter your comment here" id="" ></textarea>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit" >Submit</button>
 
 
 
