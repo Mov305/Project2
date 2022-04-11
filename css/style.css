@@ -40,3 +40,7 @@ form>div{
     font-size:1.2em;
     font-weight:500;
 }
+button {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+}
