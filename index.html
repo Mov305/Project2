@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <h1>Hello world! we are software developers</h1>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
  
 
@@ -23,6 +23,81 @@
     - The freeCodeCamp Team
 
     -->
+    <h1>freeCodeCamp Survey Form</h1>
+    <h4>Thank you for taking the time to help us improve the platform</h4>
+    <main>
+      <form action="">
+        <div>
+          <label for="">Name</label>
+          <input type="text">
+        </div>
+
+        <div>
+          <label for="">Email</label>
+          <input type="text">
+        </div>
+
+        <div>
+          <label for="">Age <span>(optional)</span></label>
+          <input type="number">
+        </div>
+
+        <div>
+          <label for="">Which option best describes your current role </label>
+          <select name=" Select current role " id="">
+            <option value="" disabled>Select current role</option>
+            <option value="">Students</option>
+            <option value="">Full Time Jop</option>
+            <option value="">Full Time Learner</option>
+            <option value="">Prefer not to say</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="">Would you recommend freeCodeCamp to a friend</label>
+          <div><input type="checkbox" name="recommend" id=""> Definitely </div>
+          <div><input type="checkbox" name="recommend" id=""> Maybe </div>
+          <div><input type="checkbox" name="recommend" id=""> Not sure </div>
+        </div>
+        
+        <div>
+          <label for="">What is your favorite feature of freeCodeCamp?</label>
+          <select name="" id="" >
+           <option value="" disabled> Select an option</option>
+           <option value="">Challenges</option>
+           <option value="">Projects</option>
+           <option value="">Community</option>
+           <option value="">Open Source</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="">What would you like to see improved? <span>(Check all that apply)</span></label>
+          <div><input type="checkbox" name="" id=""> Front-end Projects </div>
+          <div><input type="checkbox" name="" id=""> Back-end Projects </div>
+          <div><input type="checkbox" name="" id=""> Data Visualization </div>
+          <div><input type="checkbox" name="" id=""> Challenges </div>
+          <div><input type="checkbox" name="" id=""> Open Source Community</div>
+          <div><input type="checkbox" name="" id=""> Gitter help rooms</div>
+          <div><input type="checkbox" name="" id=""> Videos </div>
+          <div><input type="checkbox" name="" id=""> City Meetups </div>
+          <div><input type="checkbox" name="" id=""> Wiki </div>
+          <div><input type="checkbox" name="" id=""> Forum </div>
+          <div><input type="checkbox" name="" id=""> Additional Courses </div>
+        </div>
+
+        <div>
+          <label for="">Any commets or suggestions?</label>
+          <textarea name="" placeholder="Enter your comment here" id="" ></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+
+
+
+      </form>
+    </main>
+
     <script  src="js/index.js"></script>
   </body>
 </html>
